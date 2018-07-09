@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="YmtStaticContent" Class="StaticContentQueryDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.230;Initial Catalog=YmtStaticContent;Persist Security Info=True;User ID=ymt_admin" SettingsObjectName="Ymatou.StaticContent.QueryServices.Impl.Properties.Settings" SettingsPropertyName="YmtStaticContentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TemplateBlcokItem" Member="TemplateBlcokItems">
+    <Type Name="TemplateBlcokItem">
+      <Column Name="iTemplateBlockItemID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iTemplateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iTemplateBlcokID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sContent" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="dAddTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dupdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="iAction" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sRemark" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

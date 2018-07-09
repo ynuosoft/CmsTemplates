@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="StaticContentQuery">
+  <DataContextMoniker Name="/StaticContentQueryDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f34f0fe3-d40e-48b7-893c-2fee049543d4" absoluteBounds="3.625, 0.5, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/StaticContentQueryDataContext/TemplateBlcokItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03b69090-1709-4e94-a61f-976e94f060af" absoluteBounds="3.64, 0.96, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

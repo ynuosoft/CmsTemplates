@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{792F4213-2634-482F-9AE0-DDCC7CD4C8C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ymatou.StaticContent.DataModel</RootNamespace>
+    <AssemblyName>Ymatou.StaticContent.DataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Ymatou.StaticContent.DataModel.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DisplayNameAttribute.cs" />
+    <Compile Include="DisplayNameInputFormat.cs" />
+    <Compile Include="IblockEnum.cs" />
+    <Compile Include="Template\App\AppEveryoneInTheAround\AppEveryonInTheAroundBlockEnum.cs" />
+    <Compile Include="Template\App\AppEveryoneInTheAround\AppEveryonInTheAroundTemplate.cs" />
+    <Compile Include="Template\App\AppEveryoneInTheAround\MiddleBannerBlock.cs" />
+    <Compile Include="Template\App\AppGrapTheHour\AppGrapTheHourBlockEnum.cs" />
+    <Compile Include="Template\App\AppGrapTheHour\AppGrapTheHourTemplate.cs" />
+    <Compile Include="Template\App\AppGrapTheHour\TopBannerBlock.cs" />
+    <Compile Include="Template\App\AppSpecialSaleOnScene\AppSpecialSaleOnSceneBlockEnum.cs" />
+    <Compile Include="Template\App\AppSpecialSaleOnScene\AppSpecialSaleOnSceneTemplate.cs" />
+    <Compile Include="Template\App\AppSpecialSaleOnScene\MiddleBannerBlock.cs" />
+    <Compile Include="Template\App\AppTheGlobalHit\AppTheGlobalHitBlockEnum.cs" />
+    <Compile Include="Template\App\AppTheGlobalHit\AppTheGlobalHitTemplate.cs" />
+    <Compile Include="Template\App\AppTheGlobalHit\TopBannerBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\BrandBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\AmericanPavilionBlockEnum.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\AmericanPavilionTemplate.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\BeautyBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\BagClothingBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\BrandLogoBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\DiscountWeekCalendarBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\HealthFoodBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\HotSeasonBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\LeftPromotionBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\ManBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\MotherBabyBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\NewDiscoveryBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\StarSellerBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\ThisIsUSBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\ANZPavilionTemplate.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\BagClothingBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\BeautyBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\BrandBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\BrandLogoBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\DiscountWeekCalendarBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\ANZPavilionBlockEnum.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\HealthFoodBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\HotSeasonBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\LeftPromotionIconBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\ManBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\MotherBabyBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\NewDiscoveryBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\StarSellerBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\ThisIsANZBlock.cs" />
+    <Compile Include="Template\CountryPavilion\ANZPavilion\TopBannerBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\AsianPavilionBlockEnum.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\AsianPavilionTemplate.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\BagClothingBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\BeautyBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\BrandBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\BrandLogoBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\DiscountWeekCalendarBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\HealthFoodBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\HotSeasonBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\LeftPromotionIconBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\ManBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\MotherBabyBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\NewDiscoveryBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\StarSellerBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\ThisIsAsianBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AsianPavilion\TopBannerBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\BagClothingBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\BeautyBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\BrandBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\BrandLogoBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\DiscountWeekCalendarBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\EuropeCountryCollectionBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\EuropePavilionBlockEnum.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\EuropePavilionTemplate.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\HealthFoodBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\HotSeasonBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\LeftPromotionIconBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\ManBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\MotherBabyBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\StarSellerBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\NewDiscoveryBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\ThisIsEuropeBlock.cs" />
+    <Compile Include="Template\CountryPavilion\EuropePavilion\TopBannerBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Asia\AsiaDownUpBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Asia\AsiaLeftUpTextBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Asia\AsiaRightDownBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Australia\AustraliaDownUpBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Australia\AustraliaLeftUpTextBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Australia\AustraliaRightDownBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Baby\BabyLeftDownBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Baby\BabyLeftUpTextBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Baby\BabyMiddleRightBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Baby\BabyTitleBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Banner\TopBannerBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Europe\EuropeLeftDownBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Europe\EuropeLeftUpTextBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Europe\EuropeMiddleRightBlock.cs" />
+    <Compile Include="Template\Index215\M2C\HotRecommend\HotTagBlock.cs" />
+    <Compile Include="Template\Index215\M2C\HotRecommend\RecommendBlock.cs" />
+    <Compile Include="Template\Index215\M2C\HotRecommend\TopTenBigBlock.cs" />
+    <Compile Include="Template\Index215\M2C\HotRecommend\TopTenSmallBlock.cs" />
+    <Compile Include="Template\Index215\M2C\M2CBlocksEnums.cs" />
+    <Compile Include="Template\Index215\M2C\M2CTemplate.cs" />
+    <Compile Include="Template\Index215\M2C\Tuan\EverydayTuanBlock.cs" />
+    <Compile Include="Template\Index215\M2C\Tuan\OverseasTuanBlock.cs" />
+    <Compile Include="Template\Index215\M2C\USA\USABannerBlock.cs" />
+    <Compile Include="Template\Index215\M2C\USA\USALeftUpTextBlock.cs" />
+    <Compile Include="Template\Index215\M2C\USA\USAMiddleDownBlock.cs" />
+    <Compile Include="Template\Index215\M2C\USA\USARightBrandBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Apparel\ApparelCategoryBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Apparel\ApparelLeftDownBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Apparel\ApparelMiddleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Apparel\ApparelRightBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Apparel\ApparelTitleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Banner\LeftDownBannerBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Banner\LeftUpBannerBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Beauty\BeautyCategoryBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Beauty\BeautyLeftDownBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Beauty\BeautyMiddleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Beauty\BeautyRightBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Beauty\BeautyTitleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Grocery\GroceryCategoryBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Grocery\GroceryLeftDownBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Grocery\GroceryMiddleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Grocery\GroceryRightBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Grocery\GroceryTitleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\HomeGoods\HomeGoodsCategoryBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\HomeGoods\HomeGoodsLeftDownBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\HomeGoods\HomeGoodsMiddleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\HomeGoods\HomeGoodsRightBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\HomeGoods\HomeGoodsTitleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\HotRecommend\HotBrandsBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\HotRecommend\HotTagBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\HotRecommend\RecommendBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Maternity\MaternityCategoryBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Maternity\MaternityLeftDownBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Maternity\MaternityMiddleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Maternity\MaternityRightBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Maternity\MaternityTitleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Sports\SportsCategoryBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Sports\SportsLeftDownBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Sports\SportsMiddleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Sports\SportsRightBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Sports\SportsTitleBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Top\SearchKeywordBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Top\TopBannerBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Top\TopNoticeBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Tuan\EverydayTuanBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\Tuan\OverseaTuanBlock.cs" />
+    <Compile Include="Template\Index215\Ymt\YmtBlocksEnums.cs" />
+    <Compile Include="Template\Index215\Ymt\YmtTemplate.cs" />
+    <Compile Include="Template\Index\AmericaDistrict4BannerBlock.cs" />
+    <Compile Include="Template\Index\AmericaDistrictLeftUpBlock.cs" />
+    <Compile Include="Template\Index\AmericaDistrictRightBrand16BannerBlock.cs" />
+    <Compile Include="Template\Index\AmericaDistrictRightMiddleDown4BannerBlock.cs" />
+    <Compile Include="Template\Index\AustraliaNewZealandDistrict2BannerBlock.cs" />
+    <Compile Include="Template\Index\AustraliaNewZealandDistrictLeftUpBlock.cs" />
+    <Compile Include="Template\Index\AustraliaNewZealandDistrictRightDown4BannerBlock.cs" />
+    <Compile Include="Template\Index\CommonCategoryBrandBlock.cs" />
+    <Compile Include="Template\Index\CommonCategoryLevel1Block.cs" />
+    <Compile Include="Template\Index\CommonCategoryLevel2Block.cs" />
+    <Compile Include="Template\Index\EuropeDistrict2BannerBlock.cs" />
+    <Compile Include="Template\Index\EuropeDistrictLeftDown2BannerBlock.cs" />
+    <Compile Include="Template\Index\EuropeDistrictLeftUpBlock.cs" />
+    <Compile Include="Template\Index\EverydayTuanBlock.cs" />
+    <Compile Include="Template\Index\HotTagBlock.cs" />
+    <Compile Include="Template\Index\IndexBlockEnum.cs" />
+    <Compile Include="Template\Index\MilkDistrict2BannerBlock.cs" />
+    <Compile Include="Template\Index\MilkDistrictLeftDown2BannerBlock.cs" />
+    <Compile Include="Template\Index\MilkDistrictLeftUpBlock.cs" />
+    <Compile Include="Template\Index\NewArrivalDistrict2BannerBlock.cs" />
+    <Compile Include="Template\Index\NewArrivalDistrictLeftUpBlock.cs" />
+    <Compile Include="Template\Index\NewArrivalDistrictRightDown4BannerBlock.cs" />
+    <Compile Include="Template\Index\NoticeBlock.cs" />
+    <Compile Include="Template\Index\OverseaTuanBlock.cs" />
+    <Compile Include="Template\Index\PopularProductsBlock.cs" />
+    <Compile Include="Template\Index\ShareLeftBlock.cs" />
+    <Compile Include="Template\Index\ShareMiddleBlock.cs" />
+    <Compile Include="Template\Index\ShareRightImageBlock.cs" />
+    <Compile Include="Template\Index\ShareRightNameBlock.cs" />
+    <Compile Include="Template\Index\ShareRightNameNewUserBlock.cs" />
+    <Compile Include="Template\Index\ShareRightNamePingTuanBlock.cs" />
+    <Compile Include="Template\Index\ShoppingGuideBlock.cs" />
+    <Compile Include="Template\CountryPavilion\AmericanPavilion\TopBannerBlock.cs" />
+    <Compile Include="Template\OverSeaTuan\BottomWillComeBlock.cs" />
+    <Compile Include="Template\OverSeaTuan\HotSalesBlcok.cs" />
+    <Compile Include="Template\OverSeaTuan\OverSearTuanBlockEnum.cs" />
+    <Compile Include="Template\OverSeaTuan\TopLeftBannerBlock.cs" />
+    <Compile Include="Template\TemplateEnum.cs" />
+    <Compile Include="Template\Index\IndexTemplate.cs" />
+    <Compile Include="Template\Index\TopBannerBlock.cs" />
+    <Compile Include="IBlock.cs" />
+    <Compile Include="ITemplate.cs" />
+    <Compile Include="IBlockItem.cs" />
+    <Compile Include="IBlockItemViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template\TemplateManger.cs" />
+    <Compile Include="Template\OverSeaTuan\OverSeaTuanTemplate.cs" />
+    <Compile Include="Template\WapIndex\EveryDayTuan3Block.cs" />
+    <Compile Include="Template\WapIndex\EveryDayTuan4Block.cs" />
+    <Compile Include="Template\WapIndex\EveryDayTuan5Block.cs" />
+    <Compile Include="Template\WapIndex\PhoneExclusiveBlock.cs" />
+    <Compile Include="Template\WapIndex\ThreeLevelCategoryTop9Block.cs" />
+    <Compile Include="Template\WapIndex\TopBannerBlock.cs" />
+    <Compile Include="Template\WapIndex\WapIndexBlockEnum.cs" />
+    <Compile Include="Template\WapIndex\WapIndexTemplate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Parser\" />
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
